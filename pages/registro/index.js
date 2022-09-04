@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Layout from "../../components/Layout";
 import styles from "/styles/registro/registro.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -14,7 +15,10 @@ export default function Home() {
         <main>
           <div  className={styles.container}>
             <h1> Este es el dashboard</h1>
-            <a href="/">Login</a>
+            <Link href="/">
+              <a>Login</a>
+            </Link>
+            
           </div>
         </main>
       </Layout>
