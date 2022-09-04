@@ -1,0 +1,22 @@
+.container{
+    width: 200px;
+    height: 750px;
+    margin: 0;
+    background-color: gray;
+    display: flex;
+}
+
+.titulo{
+    font-size: 22px;
+    margin-left: 25%;
+    margin-top: 5%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.separador{
+    border-bottom: solid white;
+  height: 100px;
+  margin-top: 200px;
+  position: absolute;
+}
