@@ -14,7 +14,7 @@ export default function Home() {
       <Layout>
         <main>
           <div  className={styles.container}>
-            <h1> Este es el dashboard</h1>
+            <h1>El dashboard</h1>
             <Link href="/">
               <a>Login</a>
             </Link>
