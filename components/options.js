@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import styles from "/styles/Options.module.css";
+import styles from "/styles/options.module.css";
 
 export default function options() {
   return (
