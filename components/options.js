@@ -1,18 +1,21 @@
-import styles from '/styles/options.module.css';
+import Link from 'next/link'
+import styles from "/styles/Options.module.css";
 
-export default function options(){
-    return (
-
-        <div className='flex h-full flex-col justify-center items-center'>
-            <h1 className='text-4xl mb-5 font-bold'>Home</h1>
-        <span className='text-7xl'>Perfil</span>
-        <span className={styles.separador}></span>
-	</div>
-
-
-    );
+export default function options() {
+  return (
+    <nav className={styles.nav}>
+      <input className={styles.input} placeholder="Search..." />
+      <Link href="#">
+        <a>Home</a>
+      </Link>
+      <Link href="#">
+        <a>About</a>
+      </Link>
+      <Link href="#">
+        <a>Contact</a>
+      </Link>
+    </nav>
+  )
 }
-
-
 
     

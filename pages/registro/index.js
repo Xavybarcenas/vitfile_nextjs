@@ -11,17 +11,15 @@ export default function Home() {
         <meta name="description" content="Inicio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Layout>
-        <main>
-          <div  className={styles.container}>
-            <h1>El dashboard</h1>
-            <Link href="/">
-              <a>Login</a>
-            </Link>
-            
-          </div>
-        </main>
-      </Layout>
+      <main>
+        <div>
+          <h1>El dashboard</h1>
+          <Link href="/">
+            <a>Login</a>
+          </Link>
+        </div>
+      </main>
+      <Layout></Layout>
     </div>
   );
 }

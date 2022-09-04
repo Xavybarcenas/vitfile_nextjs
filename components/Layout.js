@@ -1,18 +1,12 @@
 import Navbar from "./nav";
-import Options from "./options"
+import Options from "./options";
 
 const Layout = ({ children }) => {
   return (
     <div>
-      
-      
-      <main>
-      <Options/>
       {children}
-        </main>
-      
+      <Options />
     </div>
-    
   );
 };
 
