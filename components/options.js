@@ -4,15 +4,17 @@ import styles from "/styles/options.module.css";
 export default function options() {
   return (
     <nav className={styles.nav}>
-      <input className={styles.input} placeholder="Search..." />
       <Link href="#">
-        <a>Home</a>
+        <a>Perfil</a>
       </Link>
       <Link href="#">
-        <a>About</a>
+        <a>Inicio</a>
       </Link>
       <Link href="#">
-        <a>Contact</a>
+        <a>Consultas</a>
+      </Link>
+      <Link href="#">
+        <a>Cerrar Sesion</a>
       </Link>
     </nav>
   )

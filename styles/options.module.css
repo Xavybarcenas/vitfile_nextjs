@@ -2,8 +2,8 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    width: 250px;
-    background-color: #fafafa;
+    width: 20%;
+    background-color: black;
     padding: 32px;
     border-right: 1px solid #eaeaea;
   }
@@ -24,7 +24,7 @@
   }
   
   .nav > a:hover {
-    background-color: #eaeaea;
+    background-color: white;
   }
   
   .input {
