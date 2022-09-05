@@ -1,13 +1,26 @@
 import Navbar from "./nav";
 import Options from "./options";
+import styles from "../components/styles/layout.module.css"
+import Head from "next/head";
 
-const Layout = ({ children }) => {
+export default function layout({ title, children }) {
   return (
-    <div>
-      {children}
-      <Options />
+    <div className={styles.container}>
+      <Head>
+        <title>{title}</title>
+      </Head>
+      <nav>
+        <Navbar />
+      </nav>
+      <main>{children}</main>
+      <aside>
+        <Options />
+      </aside>
     </div>
   );
-};
+}
 
-export default Layout;
+layout.defaultProps = {
+  title: "Vitfile",
+  
+}

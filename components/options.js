@@ -1,8 +1,9 @@
 import Link from 'next/link'
-import styles from "/styles/options.module.css";
+import styles from "/components/styles/options.module.css";
 
 export default function options() {
   return (
+    
     <nav className={styles.nav}>
       <Link href="#">
         <a>Perfil</a>
@@ -17,6 +18,7 @@ export default function options() {
         <a>Cerrar Sesion</a>
       </Link>
     </nav>
+    
   )
 }
 
