@@ -7,12 +7,12 @@
 
 .titulo{
   font-size: 1.6rem;
-  font-family: 'Helvetica Now';
+  font-family: 'Averta';
   font-weight: bold;
   margin-left: 40%;
   
-    -webkit-text-stroke: 1px white;
-    color: black;
+    
+    color: white;
      
   
 }
