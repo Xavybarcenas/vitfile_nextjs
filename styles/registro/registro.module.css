@@ -2,12 +2,17 @@
   display: flex;
   height: 100%;
   width: 100%;
-  background-color: rgb(16, 8, 72);
+  
 }
 
 .titulo{
   font-size: 1.6rem;
-  font-family: 'Arial';
+  font-family: 'Helvetica Now';
   font-weight: bold;
   margin-left: 40%;
+  
+    -webkit-text-stroke: 1px white;
+    color: black;
+     
+  
 }

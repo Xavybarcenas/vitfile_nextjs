@@ -24,6 +24,7 @@ html{
   }
   body {
     color: white;
-    background: rgb(151, 255, 224);
+    background: linear-gradient(#D3BBDD, #ECE3F0);
+
   }
 }
