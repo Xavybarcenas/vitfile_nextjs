@@ -3,7 +3,7 @@ import styles from "/components/styles/options.module.css";
 
 export default function options() {
   return (
-    
+    <div>
     <nav className={styles.nav}>
       <Link href="#">
         <a>Perfil</a>
@@ -14,11 +14,11 @@ export default function options() {
       <Link href="#">
         <a>Consultas</a>
       </Link>
-      <Link href="#">
+      <Link href="/">
         <a>Cerrar Sesion</a>
       </Link>
     </nav>
-    
+    </div>
   )
 }
 
