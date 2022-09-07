@@ -10,10 +10,8 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Options/>
-      <h1>El dashboard</h1>
-      <Link href="/">
-        <a>Login</a>
-      </Link>
+      <span className={styles.titulo}>El dashboard</span>
+      
       </div>
   );
 }
