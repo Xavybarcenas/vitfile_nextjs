@@ -9,16 +9,17 @@
   }
   
   .nav > a {
+    text-align: center;
     margin: 8px 0;
     text-decoration: none;
-    background: white;
-    border-radius: 4px;
+    background: #3CB5D8;
+    border-radius: 5px;
     font-size: 14px;
-    padding: 10px 14px;
+    padding: 10px 10px;
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 0.025em;
-    color: #333;
+    color: white;
     border: 1px solid #eaeaea;
     transition: all 0.125s ease;
   }
