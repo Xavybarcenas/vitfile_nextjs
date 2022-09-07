@@ -9,6 +9,7 @@ import Options from "/components/options";
 export default function Home() {
   return (
     <div className={styles.container}>
+      
       <Options/>
       <span className={styles.titulo}>El dashboard</span>
       

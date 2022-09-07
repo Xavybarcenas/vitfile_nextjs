@@ -12,21 +12,17 @@
     text-align: center;
     margin: 8px 0;
     text-decoration: none;
-    background: #3CB5D8;
-    border-radius: 5px;
+    
     font-size: 14px;
-    padding: 10px 10px;
+    padding: 5px 5px;
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 0.025em;
     color: white;
-    border: 1px solid #eaeaea;
-    transition: all 0.125s ease;
+    
   }
   
-  .nav > a:hover {
-    background-color: white;
-  }
+ 
   
   .input {
     margin: 32px 0;
@@ -37,6 +33,14 @@
     font-size: 14px;
     padding: 8px 16px;
     height: 28px;
+  }
+
+  .iconos{
+    margin-left: 30px;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+    border-radius: 150px;
   }
 
 

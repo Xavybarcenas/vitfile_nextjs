@@ -6,7 +6,7 @@ export default function options() {
     <div>
     <nav className={styles.nav}>
       <Link href="#">
-        <a>Perfil</a>
+        <a><img src="/images/foto.jpg" className={styles.iconos}></img>Perfil</a>
       </Link>
       <Link href="#">
         <a>Inicio</a>
