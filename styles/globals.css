@@ -3,7 +3,7 @@
 @import "tailwindcss/utilities";
 
 html{
-    height: 100%;
+    
     width: 100%;
 }
 
@@ -23,8 +23,8 @@ html{
     color-scheme: light;
   }
   body {
-    color: white;
-    background: rgb(239, 246, 248);
+    color: black;
+    background: linear-gradient(#bfdcf7, #ffffff) ;
 
   }
 }
