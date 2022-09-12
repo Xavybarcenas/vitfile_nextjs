@@ -5,10 +5,10 @@ export default function options() {
   return (
     <div>
     <nav className={styles.nav}>
-      <Link href="#">
+      <Link href="/dashboard/perfil">
         <a><img src="/images/foto.jpg" className={styles.iconos}></img>Perfil</a>
       </Link>
-      <Link href="#">
+      <Link href="/dashboard">
         <a>Inicio</a>
       </Link>
       <Link href="#">

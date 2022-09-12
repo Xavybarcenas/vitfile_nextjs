@@ -2,17 +2,14 @@
   display: flex;
   height: 100%;
   width: 100%;
-  
 }
 
-.titulo{
+.titulo {
+  height: 50px;
   font-size: 1.6rem;
-  font-family: 'Averta';
+  margin-left: 35%;
+  margin-top: 1%;
+  display: flex;
+  color: white;
   font-weight: bold;
-  margin-left: 40%;
-  
-    
-    color: black;
-     
-  
 }
