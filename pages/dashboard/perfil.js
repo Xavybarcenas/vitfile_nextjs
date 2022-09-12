@@ -9,11 +9,9 @@ export default function Perfil() {
   return (
     <div>
       <Navbar/>
-    
-    <div className={styles.container}>
-      
+    <div>
       <Options/>
-      <span className={styles.titulo}>El Perfil</span>
+      <span>El Perfil</span>
       </div>
       </div>
   );

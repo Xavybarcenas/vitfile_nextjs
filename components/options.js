@@ -3,8 +3,7 @@ import styles from "/components/styles/options.module.css";
 
 export default function options() {
   return (
-    <div>
-    <nav className={styles.nav}>
+    <nav className="columns-3xs w-min h-screen bg-sky-700">
       <Link href="/dashboard/perfil">
         <a><img src="/images/foto.jpg" className={styles.iconos}></img>Perfil</a>
       </Link>
@@ -18,7 +17,6 @@ export default function options() {
         <a>Cerrar Sesion</a>
       </Link>
     </nav>
-    </div>
   )
 }
 
