@@ -2,30 +2,49 @@
   margin: 40px;
   display: block;
 }
+.titulo{
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    display: block;
+     
+}
 
 .button {
   padding: 3px;
   margin: 20px;
   background-color: #25ceec;
-  border: solid 2px #0c5e72;
+  border: solid 3px #0c5e72;
   border-radius: 5px;
+  color: white;
 }
 
 .label {
   color: black;
   display: block;
+  width: 200px;
   
 }
 
 .span {
   display: block;
   margin: 5px;
+  font-weight: bold;
 }
 
 .input{
     color: #5e5e5e;
     background-color: white;
-    border: solid black 1px;
+    border: solid #41c9ff 1px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+
+.input:focus{
+    color: #5e5e5e;
+    background-color: white;
+    border: solid #c4cdcf 3px;
     border-radius: 5px;
     width: 200px;
 }

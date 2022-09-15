@@ -7,7 +7,7 @@ export default function Perfil() {
   return (
     <div>
       <Layout title="Perfil | Vitfile">
-        <h1>Ingresar Paciente</h1>
+        <h1 className={styles.titulo}>Ingresar Paciente</h1>
         <div className={styles.form} id="perfil">
           <form name="ingresar paciente">
             <label className={styles.label}>

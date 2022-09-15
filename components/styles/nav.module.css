@@ -1,5 +1,5 @@
 .nav_container{
-    background-color: darkblue;
+    background-color: #1793b3;
     
 }
 
@@ -20,6 +20,10 @@
 
 
 @media (prefers-color-scheme: light) {
+    .nav_container{
+        background-color: #193049;
+        
+    }
     
     
-  }
+}
