@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   background: #243b55;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   
 }
@@ -225,7 +225,7 @@
     margin: 0;
     padding: 0;
     background: #243b55;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     
   }
@@ -248,7 +248,7 @@
     margin: 0;
     padding: 0;
     background: #243b55;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     
   }
@@ -288,7 +288,7 @@
     margin: 0;
     padding: 0;
     background: #243b55;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     
   }
