@@ -43,13 +43,13 @@
 }
 
 .menu_icon{
-  width: 1.5rem;
-  height: 1.9rem;
+  width: 1.9rem;
+  height: 2rem;
   background-color: purple;
-  border-radius: 10px;
+  border-radius: 360px;
   position: absolute  ;
   top: 0%;
-  left: 1%;
+  left: 2%;
   font-size: 20px;
   font-family: sans-serif;
   color: white;
