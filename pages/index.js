@@ -10,9 +10,8 @@ export default function Home() {
         <meta name="description" content="Inicia Sesion" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <main>
-        <div className={styles.body}>
+        <div>
           <div className={styles.login_box}>
             <div className={styles.container}>
               <span className={styles.inicia}>Iniciar</span>
@@ -37,13 +36,13 @@ export default function Home() {
                 <label>Contraseña</label>
               </div>
               <Link href="/dashboard">
-              <a >
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                Ingresar
-              </a>
+                <a>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  Ingresar
+                </a>
               </Link>
             </form>
           </div>
