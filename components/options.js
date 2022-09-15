@@ -4,8 +4,8 @@ import styles from "/components/styles/options.module.css";
 
 export default function options() {
   return (
-    <div className={styles.lef_panel}>
-      <input type={'checkbox'} className="checkbox" id='check'></input>
+    <div className={styles.left_panel}>
+      <input type={'checkbox'} className={styles.checkbox} id='check'></input>
       <label className={styles.menu_icon} htmlFor="check">|||</label>
     <nav className={styles.nav}>
       
