@@ -2,42 +2,24 @@ import Head from "next/head";
 import Layout from "/components/Layout";
 import Link from "next/link";
 import styles from "/styles/dashboard/perfil.module.css";
-
 export default function Perfil() {
   return (
     <div>
       <Layout title="Perfil | Vitfile">
-        <h1 className={styles.titulo}>Ingresar Paciente</h1>
-        <div className={styles.form} id="perfil">
-          <form name="ingresar paciente">
-            <label className={styles.label}>
-              <span className={styles.span}>
-                Nombres
-              </span>
-              <input type="text" className={styles.input} />
-            </label>
-            <label className={styles.label}>
-              <span className={styles.span}>
-                Apellidos
-              </span>
-              <input type="text" className={styles.input} />
-            </label>
-            <label className={styles.label}>
-              <span className={styles.span}>
-                Edad
-              </span>
-              <input type="text" className={styles.input} />
-            </label>
-            <label className={styles.label}>
-              <span className={styles.span}>
-                Tipo de Sangre
-              </span>
-              <input type="text" className={styles.input} />
-            </label>
-            <button className={styles.button} formAction="perfil">
-              Guardar Cambios
-            </button>
-          </form>
+        <div className={styles.perfil_card}>
+          <h1 className={styles.titulo}>Perfil</h1>
+          <img src="/images/foto.jpg" className={styles.foto_perfil} alt="Perfil"></img>
+
+          <label className={styles.label}>
+            <b>Nombre:</b> Ing. Byron Bárcenas
+          </label>
+          <label className={styles.label}>
+            <b>Rol:</b> Administrador
+          </label>
+
+          <Link href="#">
+            <a ><label className={styles.botones}>Cambiar Contraseña</label></a>
+          </Link>
         </div>
       </Layout>
     </div>

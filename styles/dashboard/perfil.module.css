@@ -1,50 +1,47 @@
-.form {
-  margin: 40px;
-  display: block;
-}
 .titulo{
-    text-align: center;
-    font-family:'Courier New', Courier, monospace;
+    font-size: 30px;
     font-weight: bold;
+}
+
+.perfil_card{
+    border: solid black 1px;
+    border-radius: 5px;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    
+}
+
+.label{
     display: block;
-     
+    margin-top: 20px;
 }
 
-.button {
-  padding: 3px;
-  margin: 20px;
-  background-color: #25ceec;
-  border: solid 3px #0c5e72;
-  border-radius: 5px;
-  color: white;
+.perfil_card img{
+    position: relative;
+    top: 2%;
+    left: 35%;
+    border-radius: 150px;
+    width: 100px;
+    height: 100px;
 }
 
-.label {
-  color: black;
-  display: block;
-  width: 200px;
-  
-}
-
-.span {
-  display: block;
-  margin: 5px;
-  font-weight: bold;
-}
-
-.input{
-    color: #5e5e5e;
-    background-color: white;
-    border: solid #41c9ff 1px;
+.botones{
+    background-color: deepskyblue;
+    color: white;
+    border: solid 1px black;
     border-radius: 5px;
-    width: 200px;
-}
-
-
-.input:focus{
-    color: #5e5e5e;
-    background-color: white;
-    border: solid #c4cdcf 3px;
-    border-radius: 5px;
-    width: 200px;
+    padding: 3px;
+    width: 150px;
+    display: flex;
+    position: relative;
+    text-align: center;
+    align-content: center;
+    margin-top: 25%;
+    left: 30%;
 }
