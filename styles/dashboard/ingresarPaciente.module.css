@@ -3,9 +3,9 @@
   display: block;
 }
 .titulo{
-    text-align: center;
-    font-family:'Courier New', Courier, monospace;
+    font-size: 20px;
     font-weight: bold;
+    text-align: center;
     display: block;
      
 }
