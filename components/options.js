@@ -5,12 +5,11 @@ import styles from "/components/styles/options.module.css";
 export default function options() {
   return (
     <div className={styles.left_panel}>
-      <input type={'checkbox'} className={styles.checkbox} id='check'></input>
-      <label className={styles.menu_icon} htmlFor="check">|||</label>
+    
     <nav className={styles.nav}>
       
       <Link href="/dashboard/perfil">
-        <a><img src="/images/foto.jpg" className={styles.iconos}></img>Perfil</a>
+        <a><img src="/images/foto.jpg" className={styles.foto_perfil}></img>Perfil</a>
       </Link>
       <Link href="/dashboard">
         <a>Inicio</a>
