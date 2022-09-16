@@ -4,14 +4,14 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className={styles.body}>
+    <div >
       <Head>
         <title>Bienvenido</title>
         <meta name="description" content="Inicia Sesion" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <div>
+      <main className={styles.body}>
+        <div >
           <div className={styles.login_box}>
             <div className={styles.container}>
               <span className={styles.inicia}>Iniciar</span>
@@ -21,8 +21,7 @@ export default function Home() {
             <div className={styles.imagen}>
               <img
                 src={"/images/logo_login.png"}
-                width={100}
-                height={100}
+                
                 alt="logo_login"
               />
             </div>
