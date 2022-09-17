@@ -14,6 +14,9 @@ export default function options() {
       <Link href="/dashboard">
         <a>Inicio</a>
       </Link>
+      <Link href="/dashboard/pacientes">
+        <a>Listar Pacientes</a>
+      </Link>
       <Link href="/dashboard/ingresarPaciente">
         <a>Ingresar Paciente</a>
       </Link>
