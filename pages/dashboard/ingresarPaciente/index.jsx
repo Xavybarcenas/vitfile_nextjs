@@ -5,9 +5,9 @@ import styles from "/styles/dashboard/ingresarPaciente.module.css";
 
 export default function Perfil() {
   return (
-    <div>
-      <Layout title="Ingresar Paciente | Vitfile">
-        <h1 className={styles.titulo}>Ingresar Paciente</h1>
+    <>
+      <Layout title="Datos Personales | Vitfile">
+        <h1 className={styles.titulo}>Datos Personales</h1>
         <div className={styles.form} id="perfil">
           <form name="ingresar_Paciente">
             <label className={styles.label}>
@@ -50,7 +50,7 @@ export default function Perfil() {
       </Layout>
 
       
-    </div>
+    </>
   );
 
  

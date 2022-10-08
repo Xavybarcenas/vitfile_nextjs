@@ -5,10 +5,10 @@ import Navbar from "../../components/nav";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Layout title="Dashboard">
-        <span className="object-center">El dashboard</span>
+        <h1 className="">Bienvenido Que deseas hacer?</h1>
       </Layout>
-    </div>
+    </>
   );
 }
