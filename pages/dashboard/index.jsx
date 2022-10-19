@@ -1,7 +1,6 @@
-import Layout from '/components/Layout'
-import styles from "/styles/dashboard/dashboard.module.css";
-import Options from "/components/options";
-import Navbar from "../../components/nav";
+import Layout from '/componentes/Layout'
+import styles from "/styles/dashboard/indexDashboard.module.css";
+
 
 export default function Home() {
   return (

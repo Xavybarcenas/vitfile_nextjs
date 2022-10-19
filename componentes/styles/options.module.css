@@ -43,7 +43,7 @@
 .left_panel > nav{
   display: flex;
   flex-direction: column;
-  width: 15%;
+  width: 11%;
   height: 100%;
   align-items: center;
   position: absolute;

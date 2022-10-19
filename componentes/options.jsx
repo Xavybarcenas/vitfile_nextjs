@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import styles from "/components/styles/options.module.css";
+import styles from "/componentes/styles/options.module.css";
 
 
 export default function options() {
@@ -8,24 +8,22 @@ export default function options() {
     
     <nav className={styles.nav}>
       
-      <Link href="/dashboard/perfil">
+      <Link href="/Dashboard/perfil">
         <a><img src="/images/foto.jpg" className={styles.foto_perfil}></img>Perfil</a>
       </Link>
-      <Link href="/dashboard">
+      <Link href="/Dashboard">
         <a>Inicio</a>
       </Link>
-      <Link href="/dashboard/pacientes">
+      <Link href="/Dashboard/pacientes">
         <a>Listar Pacientes</a>
       </Link>
-      <Link href="/dashboard/ingresarPaciente">
+      <Link href="/Dashboard/ingresarPaciente">
         <a>Ingresar Paciente</a>
       </Link>
       <Link href="#">
         <a>Consultas</a>
       </Link>
-      <Link href="/">
-        <a>Cerrar Sesion</a>
-      </Link>
+      
     </nav>
     </div>
   )

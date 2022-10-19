@@ -1,6 +1,6 @@
 import Navbar from "./nav";
 import Options from "./options";
-import styles from "../components/styles/layout.module.css";
+import styles from "../componentes/styles/layout.module.css";
 import Head from "next/head";
 
 export default function layout({ title, children }) {

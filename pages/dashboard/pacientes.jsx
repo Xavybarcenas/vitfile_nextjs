@@ -1,5 +1,5 @@
-import Layout from '/components/Layout'
-import styles from "/styles/dashboard/dashboard.module.css";
+import Layout from '/componentes/Layout'
+import styles from "/styles/dashboard/indexDashboard.module.css";
 import { fetchAPI } from "/lib/api";
 
 const Pacientes = ({expedientes}) => {

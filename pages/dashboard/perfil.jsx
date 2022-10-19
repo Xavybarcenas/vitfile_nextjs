@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Layout from "/components/Layout";
+import Layout from "/componentes/Layout";
 import Link from "next/link";
-import styles from "/styles/dashboard/perfil.module.css";
+import styles from "/styles/Dashboard/perfil.module.css";
 import Script from "next/script";
 export default function Perfil() {
   return (
