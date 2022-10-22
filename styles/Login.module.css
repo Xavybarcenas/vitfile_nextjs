@@ -1,8 +1,10 @@
 .body {
   margin: 0;
   padding: 0;
+  background: #243b55;
+  width: 100%;
+  height: 100vh;
   
-  background: linear-gradient(#141e30, #243b55);
 }
 
 .imagen {
@@ -47,9 +49,9 @@
   width: 400px;
   padding: 40px;
   transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.5);
+  background: #00000080;
   box-sizing: border-box;
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 15px 25px #00000099;
   border-radius: 10px;
 }
 
@@ -205,7 +207,8 @@
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+
+@media screen and (min-width: 320px) and (max-width: 424px) {
   .login_box {
     position: absolute;
     top: 80%;
@@ -218,6 +221,14 @@
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
     border-radius: 10px;
   }
+
+  .body {
+
+    background: #243b55;
+    width: 100%;
+    height: 100vh;
+    
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -228,22 +239,36 @@
     width: 400px;
     padding: 40px;
     transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.5);
+    background: #101627;
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
     border-radius: 10px;
   }
+  .body {
+    margin: 0;
+    padding: 0;
+    background: #243b55;
+    width: 100%;
+    height: 100vh;
+    
+  }
 }
 
-@media (prefers-color-scheme: light) {
+
+
+@media (prefers-color-scheme: Dark) {
+
+
+
+@media screen and (min-width: 320px) and (max-width: 424px) {
   .login_box {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 400px;
+    width: 225px;
     padding: 40px;
     transform: translate(-50%, -50%);
-    background: rgb(16, 22, 39);
+    background: #101627;
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
     border-radius: 10px;
@@ -262,4 +287,182 @@
     margin-top: 40px;
     letter-spacing: 4px;
   }
+  .imagen {
+    top: 0;
+  position: relative;
+  left: 60%;
+  margin-bottom: 30px;
+
+  
+}
+
+.imagen img{
+  width: 60px;
+  height: 60px;
+}
+
+.container {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+}
+
+.inicia {
+  left: -10px;
+  font-size: 1.5rem;
+  position: absolute;
+  top: -5px;
+  color: white;
+}
+
+.sesion {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 2rem;
+  left: -10px;
+  color: white;
+}
+
+.barra {
+  border-left: solid white;
+  height: 15%;
+  left: 50%;
+  position: absolute;
+}
+
+}
+
+@media screen and (min-width: 425px) {
+ 
+
+  .login_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 242px;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    background: #101627;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+  }
+  .body {
+    margin: 0;
+    padding: 0;
+    background: #243b55;
+    width: 100%;
+    height: 100vh;
+    
+  }
+
+  .imagen {
+    top: 0;
+  position: relative;
+  left: 55%;
+  margin-bottom: 30px;
+}
+
+.imagen img{
+  width: 80px;
+  height: 80px;
+}
+
+.container {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+}
+
+.inicia {
+  left: 0%;
+  font-size: 1.8rem;
+  position: absolute;
+  top: -5px;
+  color: white;
+}
+
+.sesion {
+  font-size: 2rem;
+  position: absolute;
+  top: 1.8rem;
+  left: 0%;
+  color: white;
+}
+
+.barra {
+  border-left: solid white;
+  height: 20%;
+  left: 50%;
+  position: absolute;
+}
+}
+
+
+@media screen and (min-width: 768px) {
+  .login_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: #101627 ;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+  }
+  .body {
+    margin: 0;
+    padding: 0;
+    background: #243b55;
+    width: 100%;
+    height: 100vh;
+    
+  }
+
+  .imagen {
+    top: -10px;
+  position: relative;
+  left: 55%;
+  margin-bottom: 30px;
+}
+
+.imagen img{
+  width: 100px;
+  height: 100px;
+}
+
+.container {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+}
+
+.inicia {
+  left: 35%;
+  font-size: 2rem;
+  position: absolute;
+  top: -5px;
+  color: white;
+}
+
+.sesion {
+  font-size: 2rem;
+  position: absolute;
+  top: 2.5rem;
+  left: 32%;
+  color: white;
+}
+
+.barra {
+  border-left: solid white;
+  height: 20%;
+  left: 50%;
+  position: absolute;
+}
+}
+
+
+
 }
