@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div >
+    < >
       <Head>
         <title>Bienvenido</title>
         <meta name="description" content="Inicia Sesion" />
@@ -47,6 +47,6 @@ export default function Home() {
           </div>
         </div>
       </main>
-    </div>
+    </>
   );
 }
