@@ -34,7 +34,7 @@ export default function Home() {
                 <input type="password" name="password" required="" />
                 <label>Contraseña</label>
               </div>
-              <Link href="/Dashboard">
+              <Link href="/dashboard">
                 <a>
                   <span></span>
                   <span></span>
