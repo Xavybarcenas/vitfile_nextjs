@@ -14,11 +14,11 @@ import {
 
 export default function options() {
   return (
-    <div>
+    <div className="block">
       <Disclosure as="nav">
-        <Disclosure.Button className="absolute top-4 right-4 inline-flex items-center peer justify-center rounded-md p-2 text-gray-900 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white group hover:bg-gray-900">
+        <Disclosure.Button className="absolute top-[2px] right-1 inline-flex items-center peer justify-center rounded-md p-[2px] text-gray-100 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white group hover:bg-gray-none">
           <GiHamburgerMenu
-            className="block md:hidden h-6 w-6"
+            className="block lg:hidden h-6 w-6"
             aria-hidden="true"
           />
         </Disclosure.Button>

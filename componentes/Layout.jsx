@@ -10,8 +10,8 @@ export default function layout({ title, children }) {
         <title>{title}</title>
       </Head>
       <Navbar />
-      <div>{children}</div>
-      
+      <div className="fixed left-[23.6%] w-[76.6%] h-screen ">{children}</div>
+
       <aside>
         <Options />
       </aside>
