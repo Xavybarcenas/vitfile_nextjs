@@ -10,7 +10,7 @@ export default function layout({ title, children }) {
         <title>{title}</title>
       </Head>
       <Navbar />
-      <div className="fixed lg:left-[23.6%] lg:w-[76.6%] sm:left-0 sm:w-full scroll-auto h-screen">{children}</div>
+      <div className="absolute lg:left-[23.6%] lg:w-[76.6%] sm:left-0 sm:w-full scroll-auto h-screen">{children}</div>
 
       <aside>
         <Options />
