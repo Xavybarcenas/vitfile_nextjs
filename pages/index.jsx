@@ -34,13 +34,13 @@ export default function Home() {
               <input
                 type="password"
                 name="password"
-                required=""
+                required
                 className="border-b-white border-b-2 border-solid mb-2 focus:outline-none focus:border-white  w-full bg-transparent "
               />
               <label>Contraseña</label>
             </div>
             <Link href="/dashboard">
-              <a className="p-3 text-white bg-sky-500 rounded-sm mt-9 absolute hd:mt-[20%]">
+              <a className="p-3 text-white bg-sky-500 rounded-sm mt-9 absolute hd:mt-[20%] hover:border-white hover:border-solid hover:border-2 hover:bg-transparent">
                Acceder
               </a>
             </Link>
