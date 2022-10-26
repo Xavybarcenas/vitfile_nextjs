@@ -23,7 +23,7 @@ export default function options() {
           />
         </Disclosure.Button>
 
-        <div className="p-6 w-1/2 sm:w-1/4 sm:h-full h-screen bg-sky-600 z-20 fixed top-0 -left-full lg:w-60 lg:left-0 peer-focus:left-0 peer-transition ease-out delay-150 duration-200 ">
+        <div className="p-6 w-1/2 sm:w-1/2 sm:h-full h-screen bg-sky-600 z-20 fixed top-0 -left-full lg:w-60 lg:left-0 peer-focus:left-0 peer-transition ease-out delay-150 duration-200 ">
           <div>
             <h1 className="text-base text-center cursos-pointer font-bold text-white borde-b border-gray-100 pb-4 w-full">
               Bienvenido a Vitfile
