@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <Layout title="Dashboard">
        
-          <h1 className="text-center font-bold">Bienvenido Que deseas hacer?</h1>
+          <h1 className="text-center font-bold text-[22px] mb-5">Bienvenido</h1>
           <div className="grid lg:gap-1 lg:grid-cols-4 lg:grid-rows-3 sm:grid-cols-2 sm:gap-1 sm:grid-rows-5 ls:grid-cols-4 l:ml-6">
             <Items
               titulo="Agregar Pacientes"
