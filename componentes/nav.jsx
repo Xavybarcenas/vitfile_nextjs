@@ -1,13 +1,15 @@
 import Link from 'next/link'
-
+import FechaHora from './horafecha';
 
 export default function nav() {
+
+  
+
   return (
     <>
-      <nav className="bg-cyan-900 flex justify-end text-white py-1" >
+      <nav className="bg-cyan-900  text-white py-1 w-full lg:w-[82.2%] hd:w-[84.2%]  ml-auto" >
         <ul className="contents">
-          <li className="flex-none order-last mx-[50px]"><Link href="/"><a>Cerrar Sesión</a></Link></li>
-          <li className="flex-none mx-2"><Link href="/dashboard"><a>Inicio</a></Link></li>
+          <li className='text-white text-right mr-4 sm:mr-10'><FechaHora/></li>
         </ul>
       </nav>
     </>
