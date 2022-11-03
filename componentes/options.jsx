@@ -45,12 +45,15 @@ export default function options() {
                 </a>
               </div>
               </Link>
+              <Link href="/dashboard">
               <div className="flex mb-2  justify-start items-center gap-4 px-5 hover:bg-gray-900 p-2 rounded-md group cursor-pointer hover:shadow-lg m-auto">
                 <ImUserPlus className="text-2x1 text-gray-100 group-hover:text-white" />
                 <h3 className="text-base text-gray-100 group-hover:text-white font-semibold">
-                  Perfil
+                 Inicio
                 </h3>
               </div>
+              
+              </Link>
               <div className="flex mb-2  justify-start items-center gap-4 px-5 hover:bg-gray-900 p-2 rounded-md group cursor-pointer hover:shadow-lg m-auto">
                 <ImUserPlus className="text-2x1 text-gray-100 group-hover:text-white" />
                 <h3 className="text-base text-gray-100 group-hover:text-white font-semibold">

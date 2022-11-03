@@ -16,7 +16,7 @@ export default function layout({ title, children }) {
         <title>{title}</title>
       </Head>
       <Navbar />
-      <div className=" absolute w-screnn h-screen lg:left-[23.5%] lg:w-[76.5%] hd:left-[22.2%] hd:w-[77.8%]  sm:left-0 sm:w-full  scroll-auto ">{children}</div>
+      <div className=" container h-screen w-screen ">{children}</div>
 
       <aside>
         <Options />

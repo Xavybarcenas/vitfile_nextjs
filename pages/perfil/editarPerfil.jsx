@@ -3,17 +3,17 @@ import Link from "next/link";
 
 export default function editarPerfil() {
   return (
-    <div className="container bg-slate-900">
+    <>
       <Layout title="Perfil | Vitfile">
         <h1 className="font-bold">Edita tu Perfil</h1>
-        <div className="flex justify-center mt-5">
+        <div className="container flex justify-center mt-5 ">
           <img
             src="/images/foto.jpg"
             className="rounded-full w-24 h-24"
             alt="Perfil"
           />
         </div>
-        <div className="block text-center mb-8 p-1">
+        <div className="container text-center mb-8 p-1">
           <span>
             <span className="font-bold">Nombre: </span>
             Ing. Byron Bárcenas
@@ -23,8 +23,19 @@ export default function editarPerfil() {
             Administrador
           </p>
         </div>
-        <form action="">
-          <input type="text" name="" id="" className="border-2 rounded-md hover:border-cyan-500 focus-within:border-cyan-400" />
+        <form action="" className="block border-2 border-cyan-400">
+          <input
+            type="file"
+            name=""
+            id=""
+            className="input border-spacing-2 border-2 rounded-lg bg-cyan-900 text-white"
+          />
+          <input
+            type="text"
+            name=""
+            id=""
+            className="border-2 rounded-md hover:border-cyan-500 focus:border-cyan-500 focus:ring-cyan-500"
+          />
           <Link href="/perfil">
             <button
               type="submit"
@@ -35,6 +46,6 @@ export default function editarPerfil() {
           </Link>
         </form>
       </Layout>
-    </div>
+    </>
   );
 }
