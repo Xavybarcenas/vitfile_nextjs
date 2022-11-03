@@ -16,7 +16,7 @@ export default function layout({ title, children }) {
         <title>{title}</title>
       </Head>
       <Navbar />
-      <div className=" container h-screen w-screen ">{children}</div>
+      <div className="absolute h-full w-screen lg:w-[76.5%] lg:left-[23.5%] dark:bg-black">{children}</div>
 
       <aside>
         <Options />
