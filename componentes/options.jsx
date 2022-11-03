@@ -29,14 +29,14 @@ export default function options() {
               Bienvenido a Vitfile
             </h1>
             <div className="my-1 border-b border-gray-100 pb-4">
-              <Link href="/dashboard/perfil">
+              <Link href="/perfil">
               <a ><img
               src="../images/foto.jpg"
               className="rounded-full w-20 h-20 ml-[35%] ls:ml-[30%] mb-2"
             /></a>
               
               </Link>
-              <Link href="/dashboard/perfil">
+              <Link href="/perfil">
               <div className="flex mb-2  justify-center items-center gap-4 px-5 hover:bg-gray-900 p-2 rounded-md group cursor-pointer hover:shadow-lg m-auto">
                 
                 <a ><h3 className="text-base text-gray-100 group-hover:text-white font-semibold">

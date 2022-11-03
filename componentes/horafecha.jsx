@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
   export default function horafecha(){
-    const [currentTime, setCurrentTime] = useState("00:00:00");
+    const [currentTime, setCurrentTime] = useState("");
 
     useEffect(() => {
       const date = new Date();
