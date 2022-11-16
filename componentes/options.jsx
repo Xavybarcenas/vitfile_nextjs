@@ -30,29 +30,25 @@ export default function options() {
             </h1>
             <div className="my-1 border-b border-gray-100 pb-4">
               <Link href="/perfil">
-              <a ><img
-              src="../images/foto.jpg"
-              className="rounded-full w-20 h-20 ml-[35%] ls:ml-[30%] mb-2"
-            /></a>
-              
+                <img
+                  src="../images/foto.jpg"
+                  className="rounded-full w-20 h-20 ml-[35%] ls:ml-[30%] mb-2"
+                />
               </Link>
               <Link href="/perfil">
-              <div className="flex mb-2  justify-center items-center gap-4 px-5 hover:bg-gray-900 p-2 rounded-md group cursor-pointer hover:shadow-lg m-auto">
-                
-                <a ><h3 className="text-base text-gray-100 group-hover:text-white font-semibold">
-                  Perfil
-                </h3>
-                </a>
-              </div>
+                <div className="flex mb-2  justify-center items-center gap-4 px-5 hover:bg-gray-900 p-2 rounded-md group cursor-pointer hover:shadow-lg m-auto">
+                  <h3 className="text-base text-gray-100 group-hover:text-white font-semibold">
+                    Perfil
+                  </h3>
+                </div>
               </Link>
               <Link href="/dashboard">
-              <div className="flex mb-2  justify-start items-center gap-4 px-5 hover:bg-gray-900 p-2 rounded-md group cursor-pointer hover:shadow-lg m-auto">
-                <ImUserPlus className="text-2x1 text-gray-100 group-hover:text-white" />
-                <h3 className="text-base text-gray-100 group-hover:text-white font-semibold">
-                 Inicio
-                </h3>
-              </div>
-              
+                <div className="flex mb-2  justify-start items-center gap-4 px-5 hover:bg-gray-900 p-2 rounded-md group cursor-pointer hover:shadow-lg m-auto">
+                  <ImUserPlus className="text-2x1 text-gray-100 group-hover:text-white" />
+                  <h3 className="text-base text-gray-100 group-hover:text-white font-semibold">
+                    Inicio
+                  </h3>
+                </div>
               </Link>
               <div className="flex mb-2  justify-start items-center gap-4 px-5 hover:bg-gray-900 p-2 rounded-md group cursor-pointer hover:shadow-lg m-auto">
                 <ImUserPlus className="text-2x1 text-gray-100 group-hover:text-white" />
@@ -79,9 +75,9 @@ export default function options() {
               <Link href="/">
                 <div className="flex mb-2  justify-start items-center gap-4 px-5 hover:bg-gray-900 p-2 rounded-md group cursor-pointer hover:shadow-lg m-auto">
                   <ImExit className="text-2x1 text-gray-100 group-hover:text-white" />
-                  <a className="text-base text-gray-100 group-hover:text-white font-semibold">
+                  <span className="text-base text-gray-100 group-hover:text-white font-semibold">
                     Cerrar Sesión
-                  </a>
+                  </span>
                 </div>
               </Link>
             </div>

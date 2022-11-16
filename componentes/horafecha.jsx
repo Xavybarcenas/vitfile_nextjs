@@ -23,7 +23,7 @@ import { useState, useEffect } from 'react';
     });
     return(<>
     
-    <span>{currentTime}</span> 
+    <span className='text-bold'>{currentTime}</span> 
     
     </>);
 
