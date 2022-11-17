@@ -6,8 +6,8 @@ export default function itemsIndex({ titulo, path, route }) {
   return (
     <>
       <Disclosure>
-        <Link href={route}>
-          <div className="text-center items-center w-[180px] h-[100px] hover:border-sky-600 p-2 sm:w-[150px] sm:h-[120px] rounded-lg group cursor-pointer hover:shadow-lg m-2 border-solid border-2 border-gray-300 shadow-md">
+        <Link href={route} className="text-center items-center w-[180px] h-[100px] hover:border-sky-600 p-2 sm:w-[150px] sm:h-[120px] rounded-lg group cursor-pointer hover:shadow-lg m-12 border-solid border-2 border-gray-300 shadow-md">
+          <div >
             <img
               src={path}
               alt=""

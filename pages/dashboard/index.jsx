@@ -1,5 +1,7 @@
 import Layout from "/componentes/Layout";
-import Items from "/componentes/itemsIndex";
+import Items from "/componentes/ItemsIndex";
+
+//pagina principal del dashboard se hace uso del componente Items el cual representa cada uno de las opciones a mostrar en el dashboard
 
 export default function Home() {
   return (
@@ -15,30 +17,21 @@ export default function Home() {
             route="/gestion/agregarPaciente"
           />
           <Items
-            titulo="Ingresar Pacientes"
-            path="./images/Ingresar Paciente.png"
-            route="#"
-          />
-          <Items
-            titulo="Historiales Médicos"
+            titulo="Listado de Expedientes"
             path="./images/listar paciente.png"
-            route="#"
+            route="/gestion/listarExpedientes"
           />
           <Items
-            titulo="Eliminar Pacientes"
-            path="#"
-            route="#"
+            titulo="Listado de Pacientes"
+            path="./images/listar paciente.png"
+            route="/gestion/listarPacientes"
           />
           <Items
-            titulo="Agregar Pacientes"
-            path="./images/Ingresar Paciente.png"
+            titulo="Proximamente"
+            path=""
             route="#"
           />
-          <Items
-            titulo="Eliminar Pacientes"
-            path="./images/egresar Paciente.png"
-            route="#"
-          />
+         
         </div>
       </Layout>
     </>
