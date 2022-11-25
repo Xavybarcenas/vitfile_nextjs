@@ -1,40 +1,20 @@
-import { useEffect, useState } from "react";
-import { getDataByID } from "../../../services/vitfileService";
 import ExpedientePaciente from "../../../componentes/expedientePaciente";
-import { useRouter } from "next/router";
 
-export default function Paciente() {
-  const  router  = useRouter();
-  let [currentPaciente, setCurrentPaciente] = useState(null);
- 
-
-  useEffect(() => {
-    getDataByID(router.query).then((data) => {
-      setCurrentPaciente(data);
-      console.log(router);
-    });
-  }, []);
-
-  
+export default function Paciente(expedientes) {
   return (
     <>
-      {currentPaciente && (
-        <ExpedientePaciente
-          
-          value={currentPaciente}
-        />
-      )}
+      <ExpedientePaciente 
+      key = {expedientes.expediente.data.id}
+      value = {expedientes.expediente.data.attributes}/>
     </>
   );
 }
-export async function getServerSideProps({query : {id}}){
+export async function getServerSideProps({ query: { id } }) {
   const URL = `http://localhost:1337/api/expedientes/${id}`;
-    let response = await fetch(`${URL}/${id}`);
-    const expediente = await response.json
-    console.log(expediente);
-   return {
-    props:{
-      
-    }
-   }
+  const response = await fetch(URL);
+  const expediente = await response.json();
+  console.log(expediente);
+  return {
+    props: { expediente },
+  };
 }
