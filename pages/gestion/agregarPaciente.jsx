@@ -18,7 +18,7 @@ export default function agregarPaciente() {
                   type="text"
                   name="fullname"
                   id="fullname"
-                  className="border-2 border-cyan-500 m-2 w-[50%] rounded-md"
+                  className="border-b-slate-600 border-b-2 border-solid m-2 focus:outline-none focus:border-slate-600  bg-transparent "
                 />
               </div>
               <div>
@@ -29,7 +29,7 @@ export default function agregarPaciente() {
                   type="text"
                   name="age"
                   id="age"
-                  className="border-2 border-cyan-500 m-2 w-[50%] rounded-md"
+                  className="border-b-slate-600 border-b-2 border-solid m-2 focus:outline-none focus:border-slate-600  bg-transparent"
                 />
               </div>
 
@@ -41,7 +41,7 @@ export default function agregarPaciente() {
                   type="text"
                   name="address"
                   id="address"
-                  className="border-2 border-cyan-500 m-2 w-[50%] rounded-md"
+                  className="border-b-slate-600 border-b-2 border-solid m-2 focus:outline-none focus:border-slate-600  bg-transparent"
                 />
               </div>
               <div>
@@ -52,7 +52,7 @@ export default function agregarPaciente() {
                   type="text"
                   name="tiposangre"
                   id="tiposangre"
-                  className="border-2 border-cyan-500 m-2 w-[50%] rounded-md"
+                  className="border-b-slate-600 border-b-2 border-solid m-2 focus:outline-none focus:border-slate-600  bg-transparent"
                 />
               </div>
               <div>
@@ -63,7 +63,7 @@ export default function agregarPaciente() {
                   type="text"
                   name="cedula"
                   id="cedula"
-                  className="border-2 border-cyan-500 m-2 w-[50%] rounded-md"
+                  className="border-b-slate-600 border-b-2 border-solid m-2 focus:outline-none focus:border-slate-600  bg-transparent"
                 />
               </div>
               <div>
@@ -74,7 +74,7 @@ export default function agregarPaciente() {
                   type="text"
                   name="phone"
                   id="phone"
-                  className="border-2 border-cyan-500 m-2 w-[50%] rounded-md"
+                  className="border-b-slate-600 border-b-2 border-solid m-2 focus:outline-none focus:border-slate-600  bg-transparentd"
                 />
               </div>
               <div>
@@ -85,7 +85,7 @@ export default function agregarPaciente() {
                   type="text"
                   name="etnia"
                   id="etnia"
-                  className="border-2 border-cyan-500 m-2 w-[50%] rounded-md"
+                  className="border-b-slate-600 border-b-2 border-solid m-2 focus:outline-none focus:border-slate-600  bg-transparent"
                 />
               </div>
 
@@ -96,7 +96,7 @@ export default function agregarPaciente() {
                 <select
                   name="departamento"
                   id="departamento"
-                  className="border-2 border-cyan-500 m-2 w-[25%] rounded-md"
+                  className="border-b-slate-600 border-b-2 border-solid m-2 focus:outline-none focus:border-slate-600  bg-transparent"
                 >
                   <option value="Leon">Leon</option>
                   <option value="Chinandega">Chinandega</option>
@@ -111,7 +111,7 @@ export default function agregarPaciente() {
                   type="text"
                   name="municipio"
                   id="municipio"
-                  className="border-2 border-cyan-500 m-2 w-[50%] rounded-md"
+                  className="border-b-slate-600 border-b-2 border-solid m-2 focus:outline-none focus:border-slate-600  bg-transparent"
                 />
               </div>
               <div>
@@ -121,7 +121,7 @@ export default function agregarPaciente() {
                 <select
                   name="escolaridad"
                   id="escolaridad"
-                  className="border-2 border-cyan-500 m-2 w-[25%] rounded-md"
+                  className="border-b-slate-600 border-b-2 border-solid m-2 focus:outline-none focus:border-slate-600  bg-transparent"
                 >
                   <option value="bachiller">Bachiller</option>
                   <option value="primariaterminada">Primaria Terminada</option>
@@ -136,7 +136,7 @@ export default function agregarPaciente() {
                   type="text"
                   name="ocupacion"
                   id="ocupacion"
-                  className="border-2 border-cyan-500 m-2 w-[50%] rounded-md"
+                  className="border-b-slate-600 border-b-2 border-solid m-2 focus:outline-none focus:border-slate-600  bg-transparent"
                 />
               </div>
               <div>
@@ -146,7 +146,7 @@ export default function agregarPaciente() {
                 <select
                   name="estadocivil"
                   id="estadocivil"
-                  className="border-2 border-cyan-500 m-2 w-[25%] rounded-md"
+                  className="border-b-slate-600 border-b-2 border-solid m-2 focus:outline-none focus:border-slate-600  bg-transparent"
                 >
                   <option value="bachiller">Soltero(a)</option>
                   <option value="primariaterminada">Casada(a)</option>
@@ -157,7 +157,7 @@ export default function agregarPaciente() {
                 <label htmlFor="foto" className="font-formularios">
                   Foto:
                 </label>
-                <input type="file" name="foto" id="foto" />
+                <input type="file" name="foto" id="foto"  className="border-2 m-2"/>
               </div>
             </form>
             <h1 className="text-center font-titulos font-bold text-[22px] my-8">
@@ -173,7 +173,7 @@ export default function agregarPaciente() {
                   type="text"
                   name="avisara"
                   id="avisara"
-                  className="border-2 border-cyan-500 m-2 w-[40%] rounded-md"
+                  className="border-b-slate-600 border-b-2 border-solid m-2 focus:outline-none focus:border-slate-600  bg-transparent"
                 />
               </div>
               <div>
@@ -185,7 +185,7 @@ export default function agregarPaciente() {
                   type="text"
                   name="parentesco"
                   id="parentesco"
-                  className="border-2 border-cyan-500 m-2 w-[40%] rounded-md"
+                  className="border-b-slate-600 border-b-2 border-solid m-2 focus:outline-none focus:border-slate-600  bg-transparent"
                 />
               </div>
               <div>
@@ -197,7 +197,7 @@ export default function agregarPaciente() {
                   type="text"
                   name="phoneparent"
                   id="phoneparent"
-                  className="border-2 border-cyan-500 m-2 w-[40%] rounded-md"
+                  className="border-b-slate-600 border-b-2 border-solid m-2 focus:outline-none focus:border-slate-600  bg-transparent"
                 />
               </div>
               <div>
@@ -209,7 +209,7 @@ export default function agregarPaciente() {
                   type="text"
                   name="domicilio"
                   id="domicilio"
-                  className="border-2 border-cyan-500 m-2 w-[40%] rounded-md"
+                  className="border-b-slate-600 border-b-2 border-solid m-2 focus:outline-none focus:border-slate-600  bg-transparent"
                 />
               </div>
             </form>

@@ -1,9 +1,12 @@
 import Layout from "/componentes/Layout";
 import Link from "next/link";
-export default function expedientePaciente() {
+
+
+
+export default function expedientePaciente(props) {
   return (
     <>
-      <Layout title="Listar Paciente">
+      <Layout title="Informacion Paciente">
         <div className="flex">
           <img
             src="/images/mujer.png"
@@ -13,7 +16,8 @@ export default function expedientePaciente() {
           <div className="ml-[5%] grid grid-cols-5">
             <div className="m-5">
               <h1 className="font-bold">Nombres y Apellidos</h1>
-              <span>Ana Maria Lagos Rios</span>
+              <span></span>
+              {props.value.id}
             </div>
             <div className="m-5">
               <h1 className="font-bold">Sexo</h1>
@@ -135,11 +139,13 @@ export default function expedientePaciente() {
               </tr>
             </tbody>
           </table>
-          <Link href="/gestion/listarPacientes" className="bg-cyan-800 text-white absolute p-2 text-center ml-[25%] mt-[17%]">
+          <Link href="/gestion/listarExpedientes" className="bg-cyan-800 text-white absolute p-2 text-center ml-[25%] mt-[17%]">
             Aceptar
           </Link>
         </div>
       </Layout>
     </>
   );
+
+
 }
