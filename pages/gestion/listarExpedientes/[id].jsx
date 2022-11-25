@@ -3,7 +3,7 @@ import { getDataByID } from "../../../services/vitfileService";
 import ExpedientePaciente from "../../../componentes/expedientePaciente";
 import { useRouter } from "next/router";
 
-export default function paciente() {
+export default function Paciente() {
   const  router  = useRouter();
   let [currentPaciente, setCurrentPaciente] = useState(null);
  
