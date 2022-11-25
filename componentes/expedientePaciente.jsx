@@ -4,59 +4,61 @@ import Link from "next/link";
 
 
 export default function expedientePaciente(props) {
+  console.log(props);
   return (
     <>
       <Layout title="Informacion Paciente">
         <div className="flex">
           <img
-            src="/images/mujer.png"
+            src="https://res.cloudinary.com/deglifvrb/image/upload/v1669357402/foto_f78dfa3c98.jpg"
             alt=""
-            className="w-24 h-24 border-2 border-solid border-slate-800 ml-[55px] mt-3"
+            className="w-24 h-24 border-2 border-solid border-slate-800 ml-[80px] mt-3"
           />
           <div className="ml-[5%] grid grid-cols-5">
             <div className="m-5">
               <h1 className="font-bold">Nombres y Apellidos</h1>
               <span></span>
-              {props.value.id}
+              
+             {props.value.nombreCompleto}
             </div>
             <div className="m-5">
               <h1 className="font-bold">Sexo</h1>
-              <span >Femenino</span>
+              <span >{props.value.sexo}</span>
             </div>
 
             <div className="m-5">
               <h1 className="font-bold">Tipo Sangre</h1>
-              <span>O+</span>
+              <span>{props.value.tipoSangre}</span>
             </div>
             <div className="m-5">
               <h1 className="font-bold">Cedula Identidad</h1>
-              <p>281-300486-0000X</p>
+              <p>{props.value.cedula}</p>
             </div>
             <div className="m-5">
               <h1 className="font-bold">N Expediente</h1>
-              <p>005201</p>
+              <p>{props.value.nexpediente}</p>
             </div>
           </div>
         </div>
         <div className="grid grid-cols-2 m-auto ml-[10%] mt-[5%]">
           <h1 className="font-bold">Fecha Nacimiento:</h1>
-          <p>30-04-1986</p>
+          <p>{props.value.fechaNacimiento}</p>
           <h1 className="font-bold">Ocupación:</h1>
-          <p>Abogada</p>
+          <p>{props.value.ocupacion}</p>
           <h1 className="font-bold">Telefono:</h1>
-          <p>8888-8888</p>
+          <p>{props.value.telefono}</p>
           <h1 className="font-bold">Etnia:</h1>
-          <p>Mestizo</p>
+          <p>{props.value.etnia}</p>
           <h1 className="font-bold">edad:</h1>
-          <p>36</p>
+          <p>{props.value.edad}</p>
           <h1 className="font-bold">Escolaridad:</h1>
-          <p>Graduado</p>
+          <p>{props.value.escolaridad}</p>
           <h1 className="font-bold">Departamento:</h1>
-          <p>Leon</p>
+          <p>{props.value.departamento}</p>
           <h1 className="font-bold">Municipio:</h1>
-          <p>Leon</p>
+          <p>{props.value.municipio}</p>
           <h1 className="font-bold">Domicilio:</h1>
-          <p>Billares Lacayo, 3c hacia el sur, 1/2 c hacia el este.</p>
+          <p>{props.value.Domicilio}</p>
         </div>
 
        
