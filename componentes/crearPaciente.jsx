@@ -2,237 +2,318 @@ import Layout from "./Layout";
 import { useState } from "react";
 
 export default function crearPaciente(props) {
-  const [nombreCompleto, setNombreCompleto] = useState(props.value ? props.value.nombreCompleto : "");
+  const [nombreCompleto, setNombreCompleto] = useState(
+    props.value ? props.value.nombreCompleto : ""
+  );
   const [cedula, setcedula] = useState(props.value ? props.value.cedula : "");
   const [edad, setedad] = useState(props.value ? props.value.edad : "");
-  const [nexpediente, setnexpediente] = useState(props.value ? props.value.nexpediente : "");
+  const [nexpediente, setnexpediente] = useState(
+    props.value ? props.value.nexpediente : ""
+  );
   const [sexo, setsexo] = useState(props.value ? props.value.sexo : "");
-  const [fechaNacimiento, setfechaNacimiento] = useState(props.value ? props.value.fechaNacimiento : "");
-  const [telefono, setTelefono] = useState(props.value ? props.value.telefono : "");
+  const [fechaNacimiento, setfechaNacimiento] = useState(
+    props.value ? props.value.fechaNacimiento : ""
+  );
+  const [telefono, setTelefono] = useState(
+    props.value ? props.value.telefono : ""
+  );
   const [etnia, setetnia] = useState(props.value ? props.value.etnia : "");
-  const [escolaridad, setescolaridad] = useState(props.value ? props.value.escolaridad : "");
-  const [departamento, setdepartamento] = useState(props.value ? props.value.departamento : "");
-  const [municipio, setmunicipio] = useState(props.value ? props.value.municipio: "");
-  const [tipoSangre, settipoSangre] = useState(props.value ? props.value.tipoSangre : "");
-  const [domicilio, setdomicilio] = useState(props.value ? props.value.domicilio : "");
-  const [ocupacion, setocupacion] = useState(props.value ? props.value.ocupacion : "");
+  const [escolaridad, setescolaridad] = useState(
+    props.value ? props.value.escolaridad : ""
+  );
+  const [departamento, setdepartamento] = useState(
+    props.value ? props.value.departamento : ""
+  );
+  const [municipio, setmunicipio] = useState(
+    props.value ? props.value.municipio : ""
+  );
+  const [tipoSangre, settipoSangre] = useState(
+    props.value ? props.value.tipoSangre : ""
+  );
+  const [domicilio, setdomicilio] = useState(
+    props.value ? props.value.domicilio : ""
+  );
+  const [ocupacion, setocupacion] = useState(
+    props.value ? props.value.ocupacion : ""
+  );
 
-  
   function handledSubmit(e) {
     e.preventDefault();
     props.fnAction({
       nombreCompleto: nombreCompleto,
       cedula: cedula,
       edad: edad,
-      nexpediente : nexpediente,
-      sexo : sexo,
-      fechaNacimiento : fechaNacimiento,
-      ocupacion : ocupacion,
-      telefono : telefono,
-      etnia : etnia,
-      escolaridad : escolaridad,
-      departamento : departamento,
-      municipio : municipio,
-      domicilio : domicilio,
-      tipoSangre : tipoSangre,
-        ocupacion : ocupacion,  
-      
-    },
-    );
+      nexpediente: nexpediente,
+      sexo: sexo,
+      fechaNacimiento: fechaNacimiento,
+      ocupacion: ocupacion,
+      telefono: telefono,
+      etnia: etnia,
+      escolaridad: escolaridad,
+      departamento: departamento,
+      municipio: municipio,
+      domicilio: domicilio,
+      tipoSangre: tipoSangre,
+      ocupacion: ocupacion,
+    });
 
-   setNombreCompleto("");
-   setedad("");
-   setcedula("");
-   setnexpediente("");
-   setsexo("");
-   setfechaNacimiento("");
-   setTelefono("");
-   setetnia("");
-   setescolaridad("");
-   setdepartamento("");
-   setmunicipio("");
-   setdomicilio("");
-   settipoSangre("");
-   setocupacion("");
+    setNombreCompleto("");
+    setedad("");
+    setcedula("");
+    setnexpediente("");
+    setsexo("");
+    setfechaNacimiento("");
+    setTelefono("");
+    setetnia("");
+    setescolaridad("");
+    setdepartamento("");
+    setmunicipio("");
+    setdomicilio("");
+    settipoSangre("");
+    setocupacion("");
   }
 
   return (
     <>
       <Layout title="Agregar Paciente | Vitfile">
-        <h1 className="font-bold text-[22px] text-center my-3 font-titulos">
-          Agrega un nuevo Paciente
-        </h1>
-        <div className=" border-2 w-[90%]  ml-[5%] shadow-xl">
-          <div className="">
-            <form
-              action=""
-              className="grid grid-cols-2 w-[80%] m-auto my-3"
-              onSubmit={(e) => handledSubmit(e)}
-            >
-                
+        <div class="max-w-2xl mx-auto bg-white p-16">
+          <form>
+            <div class="grid gap-6 mb-6 lg:grid-cols-2">
               <div>
-                <label htmlFor="fullname" className="font-formularios">
+                <label
+                  for="first_name"
+                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                >
                   Nombre completo
                 </label>
                 <input
                   type="text"
-                  name="fullname"
-                  id="fullname"
-                  className="border-b-slate-600 border-b-2 border-solid m-2 focus:outline-none focus:border-slate-600  bg-transparent "
-                  value={nombreCompleto}
-                  onChange={(e) => setNombreCompleto(e.target.value)}
+                  id="first_name"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="Nombre Completo"
+                  required
                 />
               </div>
               <div>
-                <label htmlFor="age" className="font-formularios">
+                <label
+                  for="last_name"
+                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                >
                   Edad
                 </label>
                 <input
                   type="text"
-                  name="age"
-                  id="age"
-                  className="border-b-slate-600 border-b-2 border-solid m-2 focus:outline-none focus:border-slate-600  bg-transparent"
-                  onChange={(e) => setedad(e.target.value)}
-                  value={edad}
-                />
-              </div>
-
-              <div>
-                <label htmlFor="address" className="font-formularios">
-                  Dirreccion
-                </label>
-                <input
-                  type="text"
-                  name="address"
-                  id="address"
-                  className="border-b-slate-600 border-b-2 border-solid m-2 focus:outline-none focus:border-slate-600  bg-transparent"
-                  onChange={(e) => setdomicilio(e.target.value)}
-                  value={domicilio}
+                  id="last_name"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="Edad"
+                  required
                 />
               </div>
               <div>
-                <label htmlFor="tiposangre" className="font-formularios">
-                  tipo de sangre
+                <label
+                  for="company"
+                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                >
+                  Direccion
                 </label>
                 <input
                   type="text"
-                  name="tiposangre"
-                  id="tiposangre"
-                  className="border-b-slate-600 border-b-2 border-solid m-2 focus:outline-none focus:border-slate-600  bg-transparent"
-                  onChange={(e) => settipoSangre(e.target.value)}
-                  value={tipoSangre}
+                  id="company"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="Direccion"
+                  required
                 />
               </div>
               <div>
-                <label htmlFor="cedula" className="font-formularios">
-                  Cedula de identidad
+                <label
+                  for="phone"
+                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                >
+                  tipo de Sangre
                 </label>
                 <input
-                  type="text"
-                  name="cedula"
-                  id="cedula"
-                  className="border-b-slate-600 border-b-2 border-solid m-2 focus:outline-none focus:border-slate-600  bg-transparent"
-                  onChange={(e) => setcedula(e.target.value)}
-                  value={cedula}
-                />
-              </div>
-              <div>
-                <label htmlFor="phone" className="font-formularios">
-                  Numero de telefono
-                </label>
-                <input
-                  type="text"
-                  name="phone"
+                  type="tel"
                   id="phone"
-                  className="border-b-slate-600 border-b-2 border-solid m-2 focus:outline-none focus:border-slate-600  bg-transparentd"
-                  onChange={(e) => setTelefono(e.target.value)}
-                  value={telefono}
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="tipoSangre"
+                  required
                 />
               </div>
               <div>
-                <label htmlFor="etnia" className="font-formularios">
+                <label
+                  for="website"
+                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                >
+                  Cedula de Identidad
+                </label>
+                <input
+                  type="url"
+                  id="website"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="Cedula de Identidad"
+                  required
+                />
+              </div>
+              <div>
+                <label
+                  for="website"
+                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                >
+                  Numero de Telefono
+                </label>
+                <input
+                  type="url"
+                  id="website"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="Numero de Telefono"
+                  required
+                />
+              </div>
+              <div>
+                <label
+                  for="website"
+                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                >
                   Etnia
                 </label>
                 <input
-                  type="text"
-                  name="etnia"
-                  id="etnia"
-                  className="border-b-slate-600 border-b-2 border-solid m-2 focus:outline-none focus:border-slate-600  bg-transparent"
-                  onChange={(e) => setetnia(e.target.value)}
-                  value={etnia}
+                  type="url"
+                  id="website"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="Etnia"
+                  required
                 />
               </div>
-
               <div>
-                <label htmlFor="departamento" className="font-formularios">
+                <label
+                  for="website"
+                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                >
                   Departamento
                 </label>
-                <select
-                  name="departamento"
-                  id="departamento"
-                  className="border-b-slate-600 border-b-2 border-solid m-2 focus:outline-none focus:border-slate-600  bg-transparent"
-                  onChange={(e) => setdepartamento(e.target.value)}
-                  value={departamento}
-                >
-                  <option value="Leon">Leon</option>
-                  <option value="Chinandega">Chinandega</option>
-                  <option value="Managua">Managua</option>
-                </select>
+                <input
+                  type="url"
+                  id="website"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="Departamento"
+                  required
+                />
               </div>
               <div>
-                <label htmlFor="municipio" className="font-formularios">
+                <label
+                  for="website"
+                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                >
                   Municipio
                 </label>
                 <input
-                  type="text"
-                  name="municipio"
-                  id="municipio"
-                  className="border-b-slate-600 border-b-2 border-solid m-2 focus:outline-none focus:border-slate-600  bg-transparent"
-                  onChange={(e) => setmunicipio(e.target.value)}
-                  value={municipio}
+                  type="url"
+                  id="website"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="Municipio"
+                  required
                 />
               </div>
               <div>
-                <label htmlFor="escolaridad" className="font-formularios">
+                <label
+                  for="website"
+                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                >
                   Escolaridad
                 </label>
-                <select
-                  name="escolaridad"
-                  id="escolaridad"
-                  className="border-b-slate-600 border-b-2 border-solid m-2 focus:outline-none focus:border-slate-600  bg-transparent"
-                  onChange={(e) => setescolaridad(e.target.value)}
-                  value={escolaridad}
-                >
-                  <option value="bachiller">Bachiller</option>
-                  <option value="primariaterminada">Primaria Terminada</option>
-                  <option value="profesional">Profesional</option>
-                </select>
-              </div>
-              <div>
-                <label htmlFor="ocupacion" className="font-formularios">
-                  Ocupación
-                </label>
                 <input
-                  type="text"
-                  name="ocupacion"
-                  id="ocupacion"
-                  className="border-b-slate-600 border-b-2 border-solid m-2 focus:outline-none focus:border-slate-600  bg-transparent"
-                  onChange={(e) => setocupacion(e.target.value)}
-                  value={ocupacion}
+                  type="url"
+                  id="website"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="Escolaridad"
+                  required
                 />
               </div>
-             
-              
-              <button
-                className="bg-cyan-500 border-2 border-cyan-400 text-white w-[100px] h-[50px] rounded-lg text-center items-center ml-[50%] mt-[10%] mb-5"
-                type="submit"
-                value="save"
+              <div>
+                <label
+                  for="website"
+                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                >
+                  Ocupacion
+                </label>
+                <input
+                  type="url"
+                  id="website"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="Ocupacion"
+                  required
+                />
+              </div>
+              <div>
+                <label
+                  for="website"
+                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                >
+                  Municipio
+                </label>
+                <input
+                  type="url"
+                  id="website"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="flowbite.com"
+                  required
+                />
+              </div>
+            </div>
+            <div class="mb-6">
+            <h3>en caso de emergencia llamar:</h3>
+              <label
+                for="email"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
               >
-                Ingresar
-              </button>
-              
-            </form>
-          </div>
+                Nombre
+              </label>
+              <input
+                type="email"
+                id="email"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="john.doe@company.com"
+                required
+              />
+            </div>
+            <div class="mb-6">
+              <label
+                for="password"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >
+                Domicilio
+              </label>
+              <input
+                type="password"
+                id="password"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Domicilio"
+                required
+              />
+            </div>
+            <div class="mb-6">
+              <label
+                for="confirm_password"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >
+                Telefono
+              </label>
+              <input
+                type="text"
+                id=""
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Telefono"
+                required
+              />
+            </div>
+
+            <button
+              type="submit"
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              Submit
+            </button>
+          </form>
         </div>
       </Layout>
     </>
