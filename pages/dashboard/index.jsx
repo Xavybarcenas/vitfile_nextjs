@@ -28,7 +28,7 @@ export default function Home() {
           />
           <Items
             titulo="Ingresar Paciente"
-            path=""
+            path="./images/ingreso.png"
             route="#"
           />
          
