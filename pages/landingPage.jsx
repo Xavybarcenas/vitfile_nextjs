@@ -39,17 +39,15 @@ export default function LandingPage() {
                       <span class="text-sm text-blueGray-400">Facebook</span>
                     </div>
                     <div class="mr-4 p-3 text-center">
-                    <Link href="https://www.instagram.com/technosource2.0/">
-                      <span class="text-xl font-bold block uppercase tracking-wide text-blueGray-600 ml-3">
-                       
-                       
-                        <img
-                          src="/images/instagram.png"
-                          alt=""
-                          className="w-8"
-                        />
-                      </span>
-                      <span class="text-sm text-blueGray-400">Instagram</span>
+                      <Link href="https://www.instagram.com/technosource2.0/">
+                        <span class="text-xl font-bold block uppercase tracking-wide text-blueGray-600 ml-3">
+                          <img
+                            src="/images/instagram.png"
+                            alt=""
+                            className="w-8"
+                          />
+                        </span>
+                        <span class="text-sm text-blueGray-400">Instagram</span>
                       </Link>
                     </div>
                   </div>
@@ -64,44 +62,50 @@ export default function LandingPage() {
                   Presenta:
                 </div>
                 <div class="mb-2 text-blueGray-600 mt-0">
-                  
-
-                  <img src="./images/logoDegradado.png" className="w-64 ml-[42%] md:m-auto" alt="" />
+                  <img
+                    src="./images/logoDegradado.png"
+                    className="w-64 ml-[42%] md:m-auto"
+                    alt=""
+                  />
                 </div>
                 <div class="mb-2 text-blueGray-600">
                   <i class="fas fa-university mr-2 text-lg text-blueGray-400"></i>
                   <div className="grid grid-cols-2 gap-24 md:gap-2 md:w-full w-[50%] justify-center ml-[25%] md:m-auto  text-white p-5">
-                  <p className="text-left bg-cyan-500 p-2 rounded-md md:text-left">
-                   <b>Misión:</b>  Ofrecer un sistema de expediente llamado VitFile,
-                    dirigido a las unidades de salud (hospitales, centro de
-                    salud, clínicas privadas y provisionales, etc.), tiene como
-                    objetivo evitar la redundancia de datos, la agilización del
-                    ingreso o egreso y traslado del paciente, evitar la sobre
-                    carga para el personal, facilitar la información detallada
-                    de cada paciente (historial clínico),mantener un orden
-                    clínico , así mismo dar el mejor servicio de atención al
-                    sistema de salud en Nicaragua.
-                  </p>
-                  <p className="text-left bg-[#ee4447] p-2 rounded-md">
-                   <b>Visión:</b>  Nuestra visión es que VitFile se conozca a nivel
-                    nacional y sea utilizado por todos los centros de atención
-                    hospitalaria, con esto logramos dar oportunidades de trabajo
-                    a la población nicaragüense, buscamos garantizar la
-                    agilización de los procesos de salud que se hacen en todos
-                    los centros de atención médica, donde les brindaríamos un
-                    mejor servicio a la hora de dar atención hospitalaria al
-                    paciente.
-                  </p>
-                  
+                    <p className="text-left bg-cyan-500 p-2 rounded-md md:text-left">
+                      <b>Misión:</b> Ofrecer un sistema de expediente llamado
+                      VitFile, dirigido a las unidades de salud (hospitales,
+                      centro de salud, clínicas privadas y provisionales, etc.),
+                      tiene como objetivo evitar la redundancia de datos, la
+                      agilización del ingreso o egreso y traslado del paciente,
+                      evitar la sobre carga para el personal, facilitar la
+                      información detallada de cada paciente (historial
+                      clínico),mantener un orden clínico , así mismo dar el
+                      mejor servicio de atención al sistema de salud en
+                      Nicaragua.
+                    </p>
+                    <p className="text-left bg-[#ee4447] p-2 rounded-md">
+                      <b>Visión:</b> Nuestra visión es que VitFile se conozca a
+                      nivel nacional y sea utilizado por todos los centros de
+                      atención hospitalaria, con esto logramos dar oportunidades
+                      de trabajo a la población nicaragüense, buscamos
+                      garantizar la agilización de los procesos de salud que se
+                      hacen en todos los centros de atención médica, donde les
+                      brindaríamos un mejor servicio a la hora de dar atención
+                      hospitalaria al paciente.
+                    </p>
                   </div>
-                  <img src="./images/inicio.png" alt=""  className="w-[900px] items-center ml-[18%] md:ml-auto"/>
+                  <img
+                    src="./images/inicio.png"
+                    alt=""
+                    className="w-[900px] ml-auto ls:ml-[18%] "
+                  />
                 </div>
               </div>
               <div class="mt-10 py-10 border-t border-blueGray-200 text-center">
                 <div class="flex flex-wrap justify-center">
                   <div class="w-full lg:w-9/12 px-4">
                     <p class="mb-4 text-basic leading-relaxed text-blueGray-700">
-                      <i>!Un nuevo mundo a un solo click de distancia!!</i> 
+                      <i>!Un nuevo mundo a un solo click de distancia!!</i>
                     </p>
                   </div>
                 </div>
