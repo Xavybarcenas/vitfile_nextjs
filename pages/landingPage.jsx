@@ -101,7 +101,7 @@ export default function LandingPage() {
                 <div class="flex flex-wrap justify-center">
                   <div class="w-full lg:w-9/12 px-4">
                     <p class="mb-4 text-basic leading-relaxed text-blueGray-700">
-                      <i>!Un nuevo mundo a un solo click de distancia!</i> 
+                      <i>!Un nuevo mundo a un solo click de distancia!!</i> 
                     </p>
                   </div>
                 </div>
