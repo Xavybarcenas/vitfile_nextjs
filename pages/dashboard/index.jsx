@@ -27,7 +27,7 @@ export default function Home() {
             route="/gestion/listarPacientes"
           />
           <Items
-            titulo="Proximamente"
+            titulo="Ingresar Paciente"
             path=""
             route="#"
           />
@@ -37,3 +37,4 @@ export default function Home() {
     </>
   );
 }
+

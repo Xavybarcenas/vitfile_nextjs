@@ -1,8 +1,8 @@
 import Layout from "../../componentes/Layout";
-import Tablaexpediente from "../../componentes/tablaexpediente";
+import TablaPaciente from "../../componentes/TablaPaciente";
 export default function listarPacientes({ result }) {
   let rendered = result.data.map((element) => {
-    return <Tablaexpediente key={element.id} value={element} />;
+    return <TablaPaciente key={element.id} value={element} />;
   });
 
   return (
@@ -38,7 +38,7 @@ export async function getServerSideProps() {
   const URL = "http://localhost:1337/api/expedientes/";
   const response = await fetch(URL);
   const result = await response.json();
-
+  console.log(result)
   return {
     props: {
       result,

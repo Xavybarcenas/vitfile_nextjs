@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function tablaExpediente(props) {
+export default function tablaPaciente(props) {
   console.log(props.value);
   return (
     <tbody class="block md:table-row-group">
@@ -26,7 +26,7 @@ export default function tablaExpediente(props) {
           <span class="inline-block w-[5%] md:hidden font-bold">Actions</span>
           <Link
             class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-1 border border-blue-500 rounded "
-            href={`/gestion/listarExpedientes/${props.value.id}`}
+            href={`/gestion/listarPacientes/${props.value.id}`}
           >
             Detalles
           </Link>

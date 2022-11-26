@@ -7,18 +7,18 @@ export default function radiografias() {
       <Layout title="Listar Paciente">
         <div className="flex">
           <img
-            src="/images/mujer.png"
+            src="/images/foto.jpg"
             alt=""
             className="w-24 h-24 border-2 border-solid border-slate-800 ml-[55px] mt-3"
           />
           <div className="ml-[5%] grid grid-cols-5">
             <div className="m-5">
               <h1 className="font-bold">Nombres y Apellidos</h1>
-              <span>Ana Maria Lagos Rios</span>
+              <span>Byron Alexis Bárcenas Jarquín</span>
             </div>
             <div className="m-5">
               <h1 className="font-bold">Sexo</h1>
-              <span>Femenino</span>
+              <span>Masculino</span>
             </div>
 
             <div className="m-5">
@@ -27,11 +27,11 @@ export default function radiografias() {
             </div>
             <div className="m-5">
               <h1 className="font-bold">Cedula Identidad</h1>
-              <p>281-300486-0000X</p>
+              <p>281-240399-1010T</p>
             </div>
             <div className="m-5">
               <h1 className="font-bold">N Expediente</h1>
-              <p>005201</p>
+              <p>5001</p>
             </div>
           </div>
         </div>

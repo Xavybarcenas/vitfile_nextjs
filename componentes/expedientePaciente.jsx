@@ -4,13 +4,19 @@ import Link from "next/link";
 
 
 export default function expedientePaciente(props) {
+  let imagen;
+  if(props.value.sexo === 'Masculino'){
+      imagen = "hombre.png";
+  }else{
+      imagen = "mujer.png";
+  }
   console.log(props);
   return (
     <>
       <Layout title="Informacion Paciente">
         <div className="flex">
           <img
-            src="https://res.cloudinary.com/deglifvrb/image/upload/v1669357402/foto_f78dfa3c98.jpg"
+            src={`/images/${imagen}`}
             alt=""
             className="w-24 h-24 border-2 border-solid border-slate-800 ml-[80px] mt-3"
           />
