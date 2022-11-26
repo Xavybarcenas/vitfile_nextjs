@@ -5,7 +5,7 @@ export default function LandingPage() {
       <section class="relative py-1 bg-[#353a45] text-white">
         <div class="container mx-auto px-4">
           <div class="relative flex flex-col min-w-0 break-words  w-full mb-6 shadow-xl rounded-lg mt-1">
-            <div class="px-6 ">
+            <div class="px-6 md:p-0">
               <div class="flex flex-wrap justify-center">
                 <div class="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
                   <div class="relative">
@@ -56,7 +56,7 @@ export default function LandingPage() {
                 </div>
               </div>
               <div class="text-center mt-5 ">
-                <h3 class="text-[70px] font-bold leading-normal text-blueGray-700 mb-2">
+                <h3 class="text-[70px] font-bold leading-normal text-blueGray-700 mb-2 md:text-[50px]">
                   TechnoSource
                 </h3>
                 <div class="text-lg leading-normal mt-0 mb-2 text-blueGray-400 font-bold uppercase">
@@ -66,12 +66,12 @@ export default function LandingPage() {
                 <div class="mb-2 text-blueGray-600 mt-0">
                   
 
-                  <img src="./images/logoDegradado.png" className="w-64 ml-[42%]" alt="" />
+                  <img src="./images/logoDegradado.png" className="w-64 ml-[42%] md:m-auto" alt="" />
                 </div>
                 <div class="mb-2 text-blueGray-600">
                   <i class="fas fa-university mr-2 text-lg text-blueGray-400"></i>
-                  <div className="grid grid-cols-2 gap-24 w-[50%] justify-center ml-[25%]  text-white p-5">
-                  <p className="text-left bg-cyan-500 p-2 rounded-md">
+                  <div className="grid grid-cols-2 gap-24 md:gap-2 md:w-full w-[50%] justify-center ml-[25%] md:m-auto  text-white p-5">
+                  <p className="text-left bg-cyan-500 p-2 rounded-md md:text-left">
                    <b>Misión:</b>  Ofrecer un sistema de expediente llamado VitFile,
                     dirigido a las unidades de salud (hospitales, centro de
                     salud, clínicas privadas y provisionales, etc.), tiene como
@@ -94,7 +94,7 @@ export default function LandingPage() {
                   </p>
                   
                   </div>
-                  <img src="./images/inicio.png" alt=""  className="w-[900px] items-center ml-[18%]"/>
+                  <img src="./images/inicio.png" alt=""  className="w-[900px] items-center ml-[18%] md:ml-auto"/>
                 </div>
               </div>
               <div class="mt-10 py-10 border-t border-blueGray-200 text-center">
