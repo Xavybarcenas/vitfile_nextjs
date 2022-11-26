@@ -261,7 +261,7 @@ export default function crearPaciente(props) {
               </div>
             </div>
             <div class="mb-6">
-            <h3 className="font-bold">en caso de emergencia llamar:</h3>
+            <h3 className="font-bold mb-4">en caso de emergencia llamar:</h3>
               <label
                 for="email"
                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
@@ -311,7 +311,7 @@ export default function crearPaciente(props) {
               type="submit"
               class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
-              Submit
+              Agregar
             </button>
           </form>
         </div>

@@ -14,7 +14,7 @@ export default function layout({ title, children, props }) {
         <Navbar />
       </header>
 
-      <div className="absolute h-full w-screen lg:w-[76.5%] lg:left-[23.5%] hd:left-[15.5%] hd:w-[87.5%] dark:bg-black">
+      <div className="absolute h-full w-screen lg:w-[76.5%] lg:left-[22.5%] hd:left-[15.5%] hd:w-[87.5%] dark:bg-black">
         {children} 
       </div>
       <aside>
