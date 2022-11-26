@@ -261,7 +261,7 @@ export default function crearPaciente(props) {
               </div>
             </div>
             <div class="mb-6">
-            <h3>en caso de emergencia llamar:</h3>
+            <h3 className="font-bold">en caso de emergencia llamar:</h3>
               <label
                 for="email"
                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
