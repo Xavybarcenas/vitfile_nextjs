@@ -38,7 +38,7 @@ export default function options(props) {
               <Link href="/perfil">
                 <div className="flex mb-2  justify-center items-center gap-4 px-5 hover:bg-gray-900 p-2 rounded-md group cursor-pointer hover:shadow-lg m-auto">
                   <h3 className="text-base text-gray-100 group-hover:text-white font-semibold">
-                    {props.value.nombreCompleto}
+                    Perfil
                   </h3>
                 </div>
               </Link>

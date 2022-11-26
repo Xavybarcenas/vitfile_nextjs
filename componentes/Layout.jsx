@@ -3,9 +3,7 @@ import Navbar from "./Navbar";
 import Options from "./Options";
 
 export default function layout({ title, children, props }) {
-  let rendered = props.data.map((element) => {
-    return <TablaPaciente key={element.id} value={element} />;
-  });
+ 
   return (
     <>
       <Head>
@@ -29,14 +27,4 @@ export default function layout({ title, children, props }) {
 layout.defaultProps = {
   title: "Vitfile",
 };
-export async function getServerSideProps() {
-  const URL = "http://localhost:1337/api/expedientes/";
-  const response = await fetch(URL);
-  const result = await response.json();
-  console.log(result);
-  return {
-    props: {
-      
-    },
-  };
-}
+

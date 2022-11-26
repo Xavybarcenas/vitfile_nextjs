@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import { useState } from "react";
 import CrearPaciente from "/componentes/crearPaciente";
 
-export default function agregarPaciente(data) {
+export default function AgregarPaciente(data) {
   const [ListPacientes, setListPacientes] = useState([]);
 
   let newPaciente= (element) => {
