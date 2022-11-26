@@ -29,14 +29,16 @@ export default function LandingPage() {
                 <div class="w-full lg:w-4/12 px-4 lg:order-1">
                   <div class="flex justify-center py-4 lg:pt-4 pt-8">
                     <div class="mr-4 p-3 text-center">
-                      <span class="text-xl font-bold block uppercase tracking-wide text-blueGray-600 ml-3">
-                        <img
-                          src="/images/facebook.png"
-                          alt=""
-                          className="w-8 "
-                        />
-                      </span>
-                      <span class="text-sm text-blueGray-400">Facebook</span>
+                      <Link href="https://www.facebook.com/profile.php?id=100088180211094">
+                        <span class="text-xl font-bold block uppercase tracking-wide text-blueGray-600 ml-3">
+                          <img
+                            src="/images/facebook.png"
+                            alt=""
+                            className="w-8 "
+                          />
+                        </span>
+                        <span class="text-sm text-blueGray-400">Facebook</span>
+                      </Link>
                     </div>
                     <div class="mr-4 p-3 text-center">
                       <Link href="https://www.instagram.com/technosource2.0/">
