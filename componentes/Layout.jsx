@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Navbar from "./Navbar";
-import Options from "./Options";
+import Options from "./options";
 
 export default function layout({ title, children, props }) {
  

@@ -1,5 +1,5 @@
 import Layout from "/componentes/Layout";
-import Items from "/componentes/ItemsIndex";
+import Items from "/componentes/itemsIndex";
 
 //pagina principal del dashboard se hace uso del componente Items el cual representa cada uno de las opciones a mostrar en el dashboard
 
