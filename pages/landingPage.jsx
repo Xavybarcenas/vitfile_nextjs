@@ -86,7 +86,7 @@ export default function LandingPage() {
                       Nicaragua.
                     </p>
                     <p className="text-left bg-[#ee4447] p-2 rounded-md">
-                      <b>Visión:</b> Nuestra visión es que VitFile se conozca a
+                      <b>Visión:</b> Que VitFile se conozca a
                       nivel nacional y sea utilizado por todos los centros de
                       atención hospitalaria, con esto logramos dar oportunidades
                       de trabajo a la población nicaragüense, buscamos
