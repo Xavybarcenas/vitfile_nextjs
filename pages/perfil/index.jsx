@@ -14,18 +14,18 @@ import Link from "next/link";
           </span>
           <div className="flex justify-center mt-5">
             <img
-              src="/images/foto.jpg"
-              className="rounded-full w-24 h-24"
+              src="/images/perfil.jpg"
+              className="rounded-full w-32 h-32"
               alt="Perfil"
             />
           </div>
           <div className="block text-center mb-8 p-1">
              
-             <b>Nombre:</b> Ing. Byron Bárcenas
+             <b>Nombre:</b> Dr. Valeria Gonzales
             
       
-            <p> <b>Rol:</b>
-              Administrador</p>
+            <p> <b>Rol: </b>
+               Médico</p>
           
           </div>
 

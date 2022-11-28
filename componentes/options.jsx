@@ -12,7 +12,7 @@ import {
   ImExit,
 } from "react-icons/im";
 
-export default function options() {
+export default function options(props) {
   return (
     <div className="block">
       <Disclosure as="nav">
@@ -31,7 +31,7 @@ export default function options() {
             <div className="my-1 border-b border-gray-100 pb-4">
               <Link href="/perfil">
                 <img
-                  src="../images/foto.jpg"
+                  src="../images/perfil.jpg"
                   className="rounded-full w-20 h-20 ml-[35%] ls:ml-[30%] mb-2"
                 />
               </Link>

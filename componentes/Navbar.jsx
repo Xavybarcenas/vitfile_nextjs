@@ -1,17 +1,22 @@
-import Link from 'next/link'
-import FechaHora from './horafecha';
+import Link from "next/link";
+import FechaHora from "./horafecha";
 
 export default function nav() {
-
-  
-
   return (
     <>
-      <nav className="bg-cyan-900  text-white py-1 w-screen lg:w-[77%] sm:text-[13px] l:text-[16px] lg:ml-auto hd:w-[87.5%] " >
-        <ul className="contents">
-          <li className='text-white text-right mr-4 sm:mr-10'><FechaHora/></li>
-        </ul>
-      </nav>
+      <div class="shadow bg-cyan-900">
+        <div class="h-10 mx-auto px-5 flex items-center justify-between">
+          <a class="text-2xl hover:text-cyan-500 transition-colors cursor-pointer">
+            Logo
+          </a>
+
+          <ul class="flex items-center gap-5">
+            <li className=" transition-colors text-white">
+              <FechaHora />
+            </li>
+          </ul>
+        </div>
+      </div>
     </>
   );
 }

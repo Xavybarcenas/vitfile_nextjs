@@ -1,5 +1,5 @@
 import Layout from "../../componentes/Layout";
-import Tablaexpediente from "../../componentes/tablaexpediente"
+import Tablaexpediente from "../../componentes/TablaExpediente"
 export default function listarExpedientes({ result }) {
   let rendered = result.data.map((element) => {
     return (

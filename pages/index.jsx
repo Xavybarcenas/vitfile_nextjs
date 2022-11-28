@@ -3,51 +3,45 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <>
-      <Head>
-        <title>Bienvenido</title>
-        <meta name="description" content="Inicia Sesion" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head> 
-      <main className=" bg-[#243b55] w-screen h-screen">
-        <div className="absolute bg-[#00000080] top-[50%] left-[50%] w-1/4 h-1/2 sm:w-[90%] sm:h-[80%] ls:w-[50%] ls:h-1/2 l:w-[80%] l:h-[60%] hd:w-[25%] hd:h-[60%] -translate-x-1/2 -translate-y-1/2 box-border shadow-xl rounded-xl p-10 ">
-          <div className="text-center mb-2">
-            <span className="text-white m-1 font-semibold text-2xl">
-              Iniciar
-            </span>
-            <span className="text-white m-1 font-semibold text-2xl">
-              Sesión
-            </span>
-          </div>
-          <img
-            src={"/images/logo_login.png"}
-            alt="logo_login"
-            className="w-14 h-14 absolute left-[43%] sm:left-[40%]"
-          />
-          <form className="mt-[20%] sm:mt-28 hd:mt-[30%] ls:mt-16" method="GET">
-            <div className="text-white  p-1  ">
-              <input
-                type="text"
-                name="username"
-                required=""
-                className="mb-2 focus:outline-none border-b-2 focus:border-white  w-full  bg-transparent"
-              />
-              <label>Usuario</label>
-            </div>
-            <div className="text-white p-1 ">
-              <input
-                type="password"
-                name="password"
-                required
-                className="border-b-white border-b-2 border-solid mb-2 focus:outline-none focus:border-white  w-full bg-transparent "
-              />
-              <label>Contraseña</label>
-            </div>
-         <button type="submit" className="p-3 text-white bg-sky-500 rounded-lg mt-9 absolute hd:mt-[15%] sm:mt-12 hover:border-white hover:border-solid hover:border-2 hover:bg-transparent"
-         >Ingresar</button>
-          </form>
+    <main className="mx-auto flex min-h-screen w-full items-center justify-center bg-[#243b55] text-white">
+      <section className="flex w-[30rem] flex-col space-y-10">
+        <div class="text-center text-4xl font-medium">
+          Vitfile | Inicia Sesión
         </div>
-      </main>
-    </>
+
+        <div className="w-full transform border-b-2 bg-transparent text-lg duration-300 focus-within:border-indigo-500">
+          <input
+            type="text"
+            placeholder="Ingresa tu Usuario"
+            className="w-full border-none bg-transparent outline-none placeholder:italic focus:outline-none"
+          />
+        </div>
+
+        <div className="w-full transform border-b-2 bg-transparent text-lg duration-300 focus-within:border-indigo-500">
+          <input
+            type="password"
+            placeholder="Ingresa Tu Contraseña"
+            class="w-full border-none bg-transparent outline-none placeholder:italic focus:outline-none"
+          />
+        </div>
+
+        <Link
+          href="/dashboard"
+          className="transform rounded-sm bg-indigo-600 py-2 font-bold duration-300 hover:bg-indigo-400 text-center"
+        >
+          INICIA SESION
+        </Link>
+
+        <a
+          href="#"
+          className="transform text-center font-semibold text-gray-500 duration-300 hover:text-gray-300"
+        >
+          HAS OLVIDADO TU CONTRASEÑA?
+        </a>
+        <Link href="/landingPage" className=" text-cyan-300 text-center">
+          <h1>Visita nuestro Landing Page!!</h1>
+        </Link>
+      </section>
+    </main>
   );
 }
